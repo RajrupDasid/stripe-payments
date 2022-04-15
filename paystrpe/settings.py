@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG',default=True)
+DEBUG = config('DEBUG', default=True)
 
 ALLOWED_HOSTS = []
 
@@ -123,6 +123,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STRIPE_PUBLIC_KEY=config('STRIPE_PUBLIC_KEY')
-STRIPE_PRIVATE_KEY=config('STRIPE_SECRET_KEY')
-STRIPE_WEBHOOK_SECRET=""
+STRIPE_PUBLIC_KEY = config('STRIPE_PUBLIC_KEY')
+STRIPE_PRIVATE_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_WEBHOOK_SECRET = ""
